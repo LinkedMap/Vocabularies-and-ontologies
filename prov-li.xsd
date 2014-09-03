@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://linkedmap.unizar.es/def/prov-li#"
+	xmlns:li="http://linkedmap.unizar.es/def/prov-li#" xmlns:prov="http://www.w3.org/ns/prov#"
+	elementFormDefault="qualified">
+	<import namespace="http://www.w3.org/ns/prov#" schemaLocation="http://www.w3.org/ns/prov.xsd" />
+
+    <!-- primary topic -->
+    <element name="primaryTopic" type="prov:Entity"
+        substitutionGroup="prov:internalElement">
+        <annotation>
+            <documentation>
+                The element li:primaryTopic denotes
+                within a
+                prov:Bundle the prov:Entity
+                that is the primary topic of the
+                aforementioned bundle.
+            </documentation>
+        </annotation>
+    </element>
+
+	<!-- scope -->
+	<complexType name="Scope">
+		<annotation>
+			<documentation>
+				The complex type li:Scope is a prov:Derivation that
+				may describe the plan that defines the extent
+				of the usage used in
+				the derivation.
+			</documentation>
+		</annotation>
+		<complexContent>
+			<extension base="prov:Derivation" />
+		</complexContent>
+	</complexType>
+
+	<!-- was within scope of -->
+	<element name="wasWithinScopeOf" type="li:Scope"
+		substitutionGroup="prov:internalElement">
+		<annotation>
+			<documentation>
+				The element li:wasWithinScopeOf denotes a li:Scope
+				within a
+				prov:Document or a prov:BundleConstructor.
+			</documentation>
+		</annotation>
+	</element>
+
+	<!-- had scope -->
+	<element name="hadScope" type="prov:Plan" substitutionGroup="prov:internalElement">
+		<annotation>
+			<documentation>
+				The element li:hadPlan denotes a
+				prov:Plan within a
+				li:Scope.
+			</documentation>
+		</annotation>
+	</element>
+
+
+
+</schema>
