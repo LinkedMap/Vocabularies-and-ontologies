@@ -1,0 +1,398 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://linkedmap.unizar.es/def/linkedMapOntology#"
+     xml:base="http://linkedmap.unizar.es/def/linkedMapOntology"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://linkedmap.unizar.es/def/linkedMapOntology">
+        <owl:versionIRI rdf:resource="http://linkedmap.unizar.es/def/linkedMapOntology/1.0.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knowledgeweb.semanticweb.org/heterogeneity/alignment#entity1 -->
+
+    <owl:ObjectProperty rdf:about="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#entity1">
+        <rdfs:domain rdf:resource="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#Cell"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knowledgeweb.semanticweb.org/heterogeneity/alignment#entity2 -->
+
+    <owl:ObjectProperty rdf:about="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#entity2">
+        <rdfs:domain rdf:resource="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#Cell"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knowledgeweb.semanticweb.org/heterogeneity/alignment#formalism -->
+
+    <owl:ObjectProperty rdf:about="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#formalism">
+        <rdfs:range rdf:resource="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#Formalism"/>
+        <rdfs:domain rdf:resource="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#Ontology"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knowledgeweb.semanticweb.org/heterogeneity/alignment#measure -->
+
+    <owl:ObjectProperty rdf:about="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#measure">
+        <rdfs:domain rdf:resource="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#Cell"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knowledgeweb.semanticweb.org/heterogeneity/alignment#method -->
+
+    <owl:ObjectProperty rdf:about="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#method">
+        <rdfs:domain rdf:resource="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#Alignment"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&owl;topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knowledgeweb.semanticweb.org/heterogeneity/alignment#name -->
+
+    <owl:ObjectProperty rdf:about="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#name">
+        <rdfs:domain rdf:resource="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#Formalism"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&owl;topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knowledgeweb.semanticweb.org/heterogeneity/alignment#onto1 -->
+
+    <owl:ObjectProperty rdf:about="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#onto1">
+        <rdfs:domain rdf:resource="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#Alignment"/>
+        <rdfs:range rdf:resource="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#Ontology"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knowledgeweb.semanticweb.org/heterogeneity/alignment#onto2 -->
+
+    <owl:ObjectProperty rdf:about="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#onto2">
+        <rdfs:domain rdf:resource="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#Alignment"/>
+        <rdfs:range rdf:resource="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#Ontology"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knowledgeweb.semanticweb.org/heterogeneity/alignment#purpose -->
+
+    <owl:ObjectProperty rdf:about="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#purpose">
+        <rdfs:domain rdf:resource="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#Alignment"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&owl;topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knowledgeweb.semanticweb.org/heterogeneity/alignment#relation -->
+
+    <owl:ObjectProperty rdf:about="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#relation">
+        <rdfs:domain rdf:resource="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#Cell"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knowledgeweb.semanticweb.org/heterogeneity/alignment#uri -->
+
+    <owl:ObjectProperty rdf:about="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#uri">
+        <rdfs:domain rdf:resource="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#Formalism"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&owl;topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linkedmap.unizar.es/def/linkedMapOntology#map -->
+
+    <owl:ObjectProperty rdf:about="http://linkedmap.unizar.es/def/linkedMapOntology#map">
+        <rdfs:domain rdf:resource="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#Alignment"/>
+        <rdfs:range rdf:resource="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#Cell"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linkedmap.unizar.es/def/prov-li#primaryTopic -->
+
+    <owl:ObjectProperty rdf:about="http://linkedmap.unizar.es/def/prov-li#primaryTopic">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Bundle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linkedmap.unizar.es/def/silk#hasSilkMappings -->
+
+    <owl:ObjectProperty rdf:about="http://linkedmap.unizar.es/def/silk#hasSilkMappings">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&owl;topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="&xsd;boolean"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linkedmap.unizar.es/def/silk#numberOfSilkMappings -->
+
+    <owl:ObjectProperty rdf:about="http://linkedmap.unizar.es/def/silk#numberOfSilkMappings">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&owl;topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="&xsd;int"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://open.vocab.org/validFrom -->
+
+    <owl:ObjectProperty rdf:about="http://open.vocab.org/validFrom">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&owl;topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="&xsd;dateTime"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://open.vocab.org/validUntil -->
+
+    <owl:ObjectProperty rdf:about="http://open.vocab.org/validUntil">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&owl;topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="&xsd;dateTime"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/elements/1.1/date">
+        <rdfs:domain rdf:resource="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#Alignment"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&owl;topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="&xsd;dateTime"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/creator">
+        <rdfs:domain rdf:resource="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#Alignment"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&owl;topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/isPartOf">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:range rdf:resource="&rdfs;Class"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/replaces -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/replaces">
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#asWKT -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#asWKT">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&owl;topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#hasGeometry -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#hasGeometry">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#type -->
+
+    <owl:ObjectProperty rdf:about="&rdf;type">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&rdf;type"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Class"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:ObjectProperty rdf:about="&rdfs;label">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&owl;topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#value -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#value">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Bundle"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&owl;topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="&rdf;XMLLiteral"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knowledgeweb.semanticweb.org/heterogeneity/alignment#Alignment -->
+
+    <owl:Class rdf:about="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#Alignment"/>
+    
+
+
+    <!-- http://knowledgeweb.semanticweb.org/heterogeneity/alignment#Cell -->
+
+    <owl:Class rdf:about="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#Cell"/>
+    
+
+
+    <!-- http://knowledgeweb.semanticweb.org/heterogeneity/alignment#Formalism -->
+
+    <owl:Class rdf:about="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#Formalism"/>
+    
+
+
+    <!-- http://knowledgeweb.semanticweb.org/heterogeneity/alignment#Ontology -->
+
+    <owl:Class rdf:about="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#Ontology"/>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#Feature -->
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Feature"/>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#Geometry -->
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Geometry"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Class -->
+
+    <owl:Class rdf:about="&rdfs;Class"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Bundle -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Bundle"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
